@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+      <title>Error Page</title>
+     <style>
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <div style="margin-left:1150px;">
+        <a href="Login.html"><button type="button" class="btn btn-primary">Login</button></a>
+        <a href="Registration.html"><button type="button" class="btn btn-primary">Registration</button></a>
+        <a href="https://www.google.com/"><button type="button" class="btn btn-primary">Logout</button></a>
+       </div>
+      <nav class="navbar-inverse"  style="margin-top:30px;top:0; z-index:1000px">
+            <div class="nav-bar header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand " href="#">  <img src=shopping-basket.png alt="" width="30" height="24"></a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav ">
+                      <li><a href="Home.html">Home</a></li>
+                     <li><a href="Aboutus.html">About</a></li>
+                     <li><a href="GalleryPhotos.html">Photos</a></li>
+                    <li><a href="Friendly%20Error%20Message.html">Error</a></li>
+                     <li><a href="subscribe%20newsletter.html">Subscribe</a></li>
+                     <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a href="Testinominals.html">Review</a>
+                     <li><a href="Help%20And%20Support.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    <header>
+        <h1>Explore the Organic Foods</h1>
+        <h6>Your Ultimate Travel Destination For Vegetables </h6>
+    </header>
+    <br>
+    <br>
+ <center>
+<h3>A friendly error page for broken links or missing content.</h3>
+     <br>
+     <br>
+
+<a href="#" id="myLink">Click me</a>
+
+
+<script>
+
+document.getElementById('myLink').addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    alert('404 - Page Not Found', 'danger');
+});
+
+
+function showAlert(message, type) {
+
+    var alertDiv = document.createElement('div');
+    alertDiv.classList.add('alert', 'alert-' + type);
+    alertDiv.textContent = message;
+
+  
+    document.body.appendChild(alertDiv);
+
+    
+    setTimeout(function() {
+        alertDiv.remove();
+    }, 5000);
+}
+</script>
+
+
+    </center>
+     <footer style="margin-top: 310px;">
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
